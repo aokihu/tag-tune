@@ -1,0 +1,18 @@
+name: C++ Build
+
+on: [push, pull_request]
+
+jobs:
+  macos-intel-build:
+    runs-on: macos-12
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Install dependencies
+
+      - name: Build
+        run: ./action_macos_intel.sh
+
+      - name: Run
+        run: ./your-executable-name
