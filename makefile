@@ -7,7 +7,7 @@ CC=g++
 CFLAGS=-Wall -O2 -std=c++11
 TAGLIB_DIR=$(DIR_ROOT)taglib/taglib
 LIBS=-L$(TAGLIB_DIR) -ltag
-INCLUDES=-I$(TAGLIB_DIR)/include/taglib
+INCLUDES=-I$(TAGLIB_DIR)
 
 
 
