@@ -7,12 +7,10 @@ jobs:
     runs-on: macos-12
 
     steps:
-      - uses: actions/checkout@v1
-
-      - name: Install dependencies
+      - uses: actions/checkout@v4
 
       - name: Build
         run: ./action_macos_intel.sh
 
       - name: Run
-        run: ./your-executable-name
+        run: ./tagtune
