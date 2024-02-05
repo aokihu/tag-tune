@@ -1,4 +1,4 @@
-name: C++ Build
+name: Build Tagtune
 
 on: [push, pull_request]
 
