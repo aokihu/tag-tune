@@ -5,9 +5,9 @@ DIR_ROOT := $(cur_makefile_path)
 
 CC=g++
 CFLAGS=-Wall -O2 -std=c++11
-TAGLIB_DIR=$(DIR_ROOT)taglib/taglib
-LIBS=-L$(TAGLIB_DIR) -ltag
-INCLUDES=-I$(TAGLIB_DIR)
+TAGLIB_DIR=$(DIR_ROOT)taglib/build
+LIBS=-L$(TAGLIB_DIR)/lib -ltag
+INCLUDES=-I$(TAGLIB_DIR)/include
 
 
 
