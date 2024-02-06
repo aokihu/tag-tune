@@ -11,7 +11,7 @@ cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/build -DCMAKE_BUILD_TYPE=MinSizeRel \
     -DWITH_ZLIB=OFF \
     -DCMAKE_OSX_ARCHITECTURES="arm64;x86_64" \
     -DCMAKE_OSX_DEPLOYMENT_TARGET=12.0 .
-make
+make -j4
 make install
 
 # compile tagtune
