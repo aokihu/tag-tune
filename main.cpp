@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
             tag->album().toCString(true), 
             tag->year(), 
             tag->genre().toCString(true), 
-            properties->length(), 
+            properties->lengthInSeconds(), 
             properties->channels(), 
             properties->bitrate()
         );
