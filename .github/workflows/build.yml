@@ -24,3 +24,24 @@ jobs:
           files: |
             LICENSE.txt
             tagtune-macos-intel.tar.gz
+
+  linux-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: ./action_linux.sh
+
+      - name: Package
+        run: tar -czvf tagtune-linux.tar.gz tagtune
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            tagtune-linux.tar.gz
