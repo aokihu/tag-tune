@@ -1,7 +1,7 @@
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 cur_makefile_path := $(dir $(mkfile_path))
 
-DIR_ROOT := $(cur_makefile_path)
+DIR_ROOT := $(patsubst %/,%,$(cur_makefile_path))
 DIR_SRC := $(DIR_ROOT)/src
 DIR_INCLUDE := $(DIR_ROOT)/include
 
