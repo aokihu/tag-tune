@@ -1,3 +1,5 @@
+# makefile for tagtune
+# version: 0.2
 mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
 cur_makefile_path := $(dir $(mkfile_path))
 
