@@ -7,7 +7,7 @@ DIR_INCLUDE := $(DIR_ROOT)/include
 
 CC=g++
 CFLAGS=-Wall -O2 -std=c++11
-TAGLIB_DIR=$(DIR_ROOT)taglib/build
+TAGLIB_DIR=$(DIR_ROOT)/taglib/build
 LIBS=-L$(TAGLIB_DIR)/lib -ltag
 INCLUDES=-I$(TAGLIB_DIR)/include -I$(DIR_INCLUDE)
 
