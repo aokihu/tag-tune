@@ -23,7 +23,7 @@ $(TARGET): $(OBJ)
 
 # 通用规则来编译 .cpp 文件
 %.o: %.cpp
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDES) -c $<	-o $@
 
 clean:
 	rm -f $(DIR_SRC)/*.o $(TARGET)
