@@ -15,5 +15,4 @@ make install
 # compile tagtune
 cd ..
 pwd
-make clean
 make
