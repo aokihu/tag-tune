@@ -21,7 +21,7 @@ TagTune is a C++ program designed to extract and format metadata from audio file
 Clone the TagTune repository to your local machine:
 
 ```shell
-git clone [repository URL]
+git clone https://github.com/aokihu/tag-tune.git
 ```
 
 Navigate to the TagTune project directory:
