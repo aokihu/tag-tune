@@ -47,9 +47,9 @@ To use TagTune, run the program with an audio file as an argument:
 
 ## Options:
 
-- '-v' : Display the software version.
-- '-t format' : Specify the output format (json, yaml, text). Defaults to JSON if not specified.
-- '<filename>' : Path to the audio file.
+- `-v` : Display the software version.
+- `-t` format' : Specify the output format (json, yaml, text). Defaults to JSON if not specified.
+- `<filename>` : Path to the audio file.
   Example:
   ./tagtune -t yaml song.mp3
 
