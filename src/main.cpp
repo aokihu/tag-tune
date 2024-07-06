@@ -6,7 +6,7 @@
 #include <cstring>
 
 // Version
-const std::string VERSION = "1.0.1";
+const std::string VERSION = "1.0.3";
 
 
 // Program entry point
